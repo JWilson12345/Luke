@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styling */
+        nav.navbar {
+            background-color: #333;
+        }
+
+        nav.navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+
+        nav.navbar a:hover {
+            background-color: #575757;
+        }
+
+        /* Title Styling */
+        .title {
+            margin-top: 30px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        /* Card Container */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        /* Card Styling */
+        .card-custom {
+            background-color: #f7f7f7; /* Slightly darker white */
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, height 0.3s ease; /* Transition for height change */
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Drop shadow */
+            height: 350px; /* Default height */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Ensure content starts from the top */
+        }
+
+        /* Card Hover Effect */
+.card-custom:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add a stronger shadow to make it look like it is lifting */
+    height: 600px; /* Increase the card's height on hover */
+}
+
+/* Image Styling */
+.card-custom img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+    border-radius: 8px;
+    transition: transform 0.5s ease, height 0.5s ease; /* Smooth transition for the image movement and height expansion */
+}
+
+/* When hovering over the card, move the image downward */
+.card-custom:hover img {
+    transform: translateY(20px); /* Move image down when the card expands */
+}
+
+/* Ensure the cards maintain the same height when not hovered */
+.card-custom {
+    height: 450px; /* Default height */
+    transition: height 0.5s ease; /* Smooth transition for height expansion */
+}
+
+
+
+        /* Grid System - 3 Cards per Row */
+        .card-container .col-md-4 {
+            flex: 1 0 32%; /* Ensure each card is 1/3 of the container */
+            max-width: 32%; /* Force 3 cards per row with a little gap */
+            padding: 10px; /* Padding between cards */
+        }
+
+        /* Links (cards) */
+        .card-link {
+            text-decoration: none; /* Remove default underline from links */
+            color: inherit; /* Keep the color from the card */
+        }
+
+        /* Title in the card */
+        .card-custom h5.title {
+            font-size: 1.5rem; /* Adjust title size to make it smaller */
+            margin-bottom: 10px;
+        }
+
+        /* Card Text */
+        .card-custom p {
+            font-size: 1rem; /* Adjust description text size */
+            margin-bottom: 10px;
+            color: #333; /* Slightly darker color for text readability */
+            overflow: hidden; /* Prevent text overflow */
+            text-overflow: ellipsis;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Modern Crime Response</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> <!-- Home not active -->
+                <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+                <li class="nav-item"><a class="nav-link" href="response-mechanisms.html">Response Mechanisms</a></li>
+                <li class="nav-item"><a class="nav-link" href="resources-reports.html">Resources & Reports</a></li>
+                <li class="nav-item"><a class="nav-link active" href="references.html">References</a></li> <!-- Active -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Page Title -->
+    <h2 class="title">References</h2>
+
+    <!-- Reference Cards -->
+    <div class="container">
+        <div class="card-container">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <a href="https://en.wikipedia.org/wiki/National_Crime_Agency" class="card-link">
+                    <div class="card-custom">
+                        <img src="images/place.jpeg" alt="Reference Image 1"> <!-- Placeholder Image -->
+                        <h5 class="title">Reference 1</h5>
+                        <p>National Crime Agency. (n.d.). National Crime Agency. Retrieved from https://en.wikipedia.org/wiki/National_Crime_Agency.</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <a href="https://www.rand.org/pubs/research_briefs/RB9996.html" class="card-link">
+                    <div class="card-custom">
+                        <img src="images/place.jpeg" alt="Reference Image 2"> <!-- Placeholder Image -->
+                        <h5 class="title">Reference 2</h5>
+                        <p>RAND Corporation. (2017, May 1). Emerging Technology Trends and Their Impact on Criminal Justice. Retrieved from https://www.rand.org/pubs/research_briefs/RB9996.html</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <a href="https://hmicfrs.justiceinspectorates.gov.uk/publication-html/keep-the-light-on-police-response-to-cyber-dependent-crime/" class="card-link">
+                    <div class="card-custom">
+                        <img src="images/place.jpeg" alt="Reference Image 3"> <!-- Placeholder Image -->
+                        <h5 class="title">Reference 3</h5>
+                        <p>Her Majesty's Inspectorate of Constabulary and Fire & Rescue Services. (2022, May 1). Cyber: Keep the light on – An inspection of the police response to cyber-dependent crime. Retrieved from https://hmicfrs.justiceinspectorates.gov.uk/publication-html/keep-the-light-on-police-response-to-cyber-dependent-crime/.</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-4">
+                <a href="https://nij.ojp.gov/topics/articles/using-artificial-intelligence-address-criminal-justice-needs" class="card-link">
+                    <div class="card-custom">
+                        <img src="images/place.jpeg" alt="Reference Image 4"> <!-- Placeholder Image -->
+                        <h5 class="title">Reference 4</h5>
+                        <p>National Institute of Justice. (2018, March 1). Using Artificial Intelligence to Address Criminal Justice Needs. Retrieved from https://nij.ojp.gov/topics/articles/using-artificial-intelligence-address-criminal-justice-needs.</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-4">
+                <a href="https://en.wikipedia.org/wiki/Violent_Crime_Impact_Teams" class="card-link">
+                    <div class="card-custom">
+                        <img src="images/place.jpeg" alt="Reference Image 5"> <!-- Placeholder Image -->
+                        <h5 class="title">Reference 5</h5>
+                        <p>U.S. Department of Justice. (2007, January 1). Violent Crime Impact Teams Initiative. Retrieved from https://en.wikipedia.org/wiki/Violent_Crime_Impact_Teams</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-4">
+                <a href="https://en.wikipedia.org/wiki/Violent_Crime_Impact_Teams" class="card-link">
+                    <div class="card-custom">
+                        <img src="images/place.jpeg" alt="Reference Image 6"> <!-- Placeholder Image -->
+                        <h5 class="title">Reference 6</h5>
+                        <p>U.S. Department of Justice. (2007, January 1). San Bernardino Police Department Highlight Accomplishments of VCIT. Retrieved from https://en.wikipedia.org/wiki/Violent_Crime_Impact_Teams</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Card 7 -->
+            <div class="col-md-4">
+                <a href="https://www.youtube.com" class="card-link">
+                    <div class="card-custom">
+                        <img src="images/place.jpeg" alt="Reference Image 7"> <!-- Placeholder Image -->
+                        <h5 class="title">Reference 7</h5>
+                        <p>Brief description of the reference.</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Card 8 -->
+            <div class="col-md-4">
+                <a href="https://www.youtube.com" class="card-link">
+                    <div class="card-custom">
+                        <img src="images/place.jpeg" alt="Reference Image 8"> <!-- Placeholder Image -->
+                        <h5 class="title">Reference 8</h5>
+                        <p>Brief description of the reference.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Modern Crime Response &copy; 2024</p>
+    </footer>
+
+</body>
+</html>
+/* Crime Map Styling */
+#crimeMap {
+    height: 600px; /* Ensure that the map container has a height */
+    width: 100%;   /* Ensure the map takes full width */
+}
+
+/* Map Legend */
+#legend {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+}
+
+/* Each legend color block */
+#legend div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+/* Color block styling */
+#legend span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styling */
+        nav.navbar {
+            background-color: #333;
+        }
+
+        nav.navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+
+        nav.navbar a:hover {
+            background-color: #575757;
+        }
+
+        /* Title Styling */
+        .title {
+            margin-top: 30px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        /* Card Container */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        /* Card Styling */
+        .card-custom {
+            background-color: #f7f7f7; /* Slightly darker white */
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, height 0.3s ease; /* Transition for height change */
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Drop shadow */
+            height: 350px; /* Default height */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Ensure content starts from the top */
+            overflow: hidden; /* Prevent overflowing content */
+        }
+
+        /* Card Hover Effect */
+        .card-custom:hover {
+            transform: scale(1.05); /* Slightly enlarge the card */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add a stronger shadow to make it look like it is lifting */
+            height: auto; /* Let the card height increase only if necessary */
+            padding-bottom: 40px; /* Add padding to allow space when expanded */
+        }
+
+        /* Image Styling */
+        .card-custom img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; /* Ensures the image fills the space without distortion */
+            border-radius: 8px;
+            transition: transform 0.5s ease, height 0.5s ease; /* Smooth transition for the image movement */
+        }
+
+        /* When hovering over the card, move the image downward */
+        .card-custom:hover img {
+            transform: translateY(20px); /* Move image down when the card expands */
+        }
+
+        /* Title in the card */
+        .card-custom h5.title {
+            font-size: 1.5rem; /* Adjust title size to make it smaller */
+            margin-bottom: 10px;
+        }
+
+        /* Card Text */
+        .card-custom p {
+            font-size: 1rem; /* Adjust description text size */
+            margin-bottom: 10px;
+            color: #333; /* Slightly darker color for text readability */
+            overflow: hidden; /* Prevent text overflow */
+            text-overflow: ellipsis;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Modern Crime Response</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> <!-- Home not active -->
+                    <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="response-mechanisms.html">Response Mechanisms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources-reports.html">Resources & Reports</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="references.html">References</a></li> <!-- Active -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <h2 class="title">References</h2>
+
+    <!-- Reference Cards -->
+    <div class="container">
+        <div class="card-container">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <a href="https://en.wikipedia.org/wiki/National_Crime_Agency" class="card-link">
+                    <div class="card-custom">
+                        <img src="images/place.jpeg" alt="Reference Image 1"> <!-- Placeholder Image -->
+                        <h5 class="title">Reference 1</h5>
+                        <p>National Crime Agency. (n.d.). National Crime Agency. Retrieved from https://en.wikipedia.org/wiki/National_Crime_Agency.</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <a href="https://www.rand.org/pubs/research_briefs/RB9996.html" class="card-link">
+                    <div class="card-custom">
+                        <img src="images/place.jpeg" alt="Reference Image 2"> <!-- Placeholder Image -->
+                        <h5 class="title">Reference 2</h5>
+                        <p>RAND Corporation. (2017, May 1). Emerging Technology Trends and Their Impact on Criminal Justice. Retrieved from https://www.rand.org/pubs/research_briefs/RB9996.html</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <a href="https://hmicfrs.justiceinspectorates.gov.uk/publication-html/keep-the-light-on-police-response-to-cyber-dependent-crime/" class="card-link">
+                    <div class="card-custom">
+                        <img src="images/place.jpeg" alt="Reference Image 3"> <!-- Placeholder Image -->
+                        <h5 class="title">Reference 3</h5>
+                        <p>Her Majesty's Inspectorate of Constabulary and Fire & Rescue Services. (2022, May 1). Cyber: Keep the light on – An inspection of the police response to cyber-dependent crime. Retrieved from https://hmicfrs.justiceinspectorates.gov.uk/publication-html/keep-the-light-on-police-response-to-cyber-dependent-crime/.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Modern Crime Response &copy; 2024</p>
+    </footer>
+
+</body>
+</html>
+.collapsible-content {
+    display: none;
+    overflow: hidden;
+}
+/* Fix the Learn More button size */
+.btn-toggle {
+    width: auto;  /* Allow the button to shrink to its content */
+    display: inline-block;  /* Change to inline-block to maintain natural button size */
+    margin: 10px 0;  /* Adjust margin if needed */
+}
+/* Container for graph and additional info */
+.graph-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Prevent anything from spilling outside */
+}
+
+.graph-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth slide transition */
+}
+
+/* Style for the graph itself */
+.graph {
+    width: 100%;
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+/* Style for the info section */
+.additional-info {
+    width: 100%;
+    padding: 20px;
+    background-color: #f7f7f7;
+    display: none; /* Hidden by default */
+}
+
+/* Show the additional info when it's active */
+.additional-info.active {
+    display: block;
+}
+
+/* Active slide effect when info is visible */
+.graph.slide-out {
+    transform: translateX(-100%); /* Move the graph to the left */
+}
+/* Bubble Effect Styling */
+.additional-info {
+    display: none; /* Initially hidden */
+    padding: 20px;
+    background-color: rgba(240, 248, 255, 0.9); /* Darker white background */
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Stronger drop shadow */
+    max-height: 400px; /* Limit the height */
+    overflow-y: auto; /* Allow scrolling if content is too long */
+    position: relative;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+/* Apply the "active" class to show the content with bubble effect */
+.additional-info.active {
+    display: block;
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Optional: Style the button when content is visible */
+button.active {
+    background-color: #007bff; /* Slightly darker blue */
+}
+
+/* Add spacing between button and info content */
+button {
+    margin-top: 20px;
+}
+/* Make the hyperlinks blue and not bold */
+a {
+    color: blue;
+    font-weight: normal;
+    text-decoration: none; /* Optional: removes underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Optional: adds underline on hover */
+}
+/* Card Styling */
+.card-custom {
+    background-color: #f7f7f7; /* Slightly darker white */
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    height: 450px; /* Ensure the card has a fixed height */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Make sure content is aligned from top to bottom */
+    overflow: hidden; /* Prevent content from overflowing */
+}
+
+/* Image Styling inside Card */
+.card-custom img {
+    width: 100%; /* Ensure image takes up full width of card */
+    height: 200px; /* Fix height for image */
+    object-fit: cover; /* Ensure image covers the area without stretching */
+    border-radius: 8px;
+    margin-top: auto; /* Push image to the bottom */
+    max-height: 200px; /* Ensure image doesn't exceed the height */
+}

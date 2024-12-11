@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Crime Response</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Hero Section Styling */
+        .hero-section {
+            background: url('images/background.jpg') no-repeat center center/cover;
+            height: 400px;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .title {
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: underline;
+            text-align: center; /* Center the section titles */
+        }
+
+        .section-spacing {
+            margin-top: 50px;
+        }
+
+        /* Textbox styling for Bubble Effect */
+        .textbox {
+            width: 100%;
+            height: 300px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            resize: none;
+            overflow: auto; /* Allow scrolling if content is too long */
+            transition: all 0.3s ease-out; /* Smooth transition for bubble effect */
+            transform: scale(1); /* Default scale */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Light shadow */
+        }
+
+        /* Hover effect for expanding bubbles */
+        .textbox:hover {
+            transform: scale(1.05); /* Slightly enlarge the bubble on hover */
+            box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+        }
+
+        .textbox:focus {
+            outline: none; /* Remove the default focus outline */
+        }
+
+        /* Styling for container */
+        .container {
+            margin-top: 30px;
+        }
+
+        .row {
+            margin-bottom: 30px;
+        }
+
+        /* Styling for the page layout */
+        .col-md-6 {
+            margin-bottom: 20px;
+        }
+
+        /* Title above each bubble */
+        .bubble-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* Placeholder styling */
+        ::placeholder {
+            color: #888;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Modern Crime Response</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="response-mechanisms.html">Response Mechanisms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources-reports.html">Resources & Reports</a></li>
+                    <li class="nav-item"><a class="nav-link" href="references.html">References</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Emerging Contemporary Crimes -->
+    <section id="emerging-crimes" class="section-spacing">
+        <h2 class="title">Emerging Contemporary Crimes</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <!-- Title Above the Bubble -->
+                    <div class="bubble-title">Ransomware Trends (Last 10 Years)</div>
+                    <div class="textbox" id="ransomwareTextBox" placeholder="Enter information about Ransomware...">
+                        <p>Ransomware has become a major global issue in the last decade. This type of cyberattack locks victims out of their data and demands a ransom, usually in cryptocurrency, to unlock it. Over time, ransomware attacks have grown more sophisticated, targeting critical sectors like healthcare, government, and infrastructure.</p>
+                        <p><strong>Key Trends:</strong></p>
+                        <p><strong>More Targeted Attacks:</strong> In the 2010s, ransomware attacks like CryptoLocker spread via phishing emails. However, by the mid-2010s, ransomware groups started targeting specific organizations with greater precision. Attacks such as WannaCry (2017) spread worldwide, affecting over 200,000 systems. More recently, attackers have focused on critical industries, including healthcare and energy.</p>
+                        <p><strong>Double-Extortion:</strong> Ransomware groups now use a “double-extortion” method, where they both encrypt and steal data. If victims don’t pay, they face the threat of having sensitive data released. High-profile cases, such as the attack on JBS Foods in 2021, show how this tactic pressures victims to pay up.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <!-- Title Above the Bubble -->
+                    <div class="bubble-title">Identity Theft Trends (Last 10 Years)</div>
+                    <div class="textbox" id="identityTheftTextBox" placeholder="Enter information about Identity Theft...">
+                        <p>Identity theft has become a significant concern in the last decade. This crime involves stealing personal information, such as social security numbers or bank account details, and using it for fraudulent activities. The methods of identity theft have become more sophisticated, and the victims have grown more diverse, from individuals to large organizations.</p>
+                        <p><strong>Key Trends:</strong></p>
+                        <p><strong>Online and Data Breaches:</strong> Over the past 10 years, data breaches have become one of the most common ways personal information is stolen. Hackers target large companies, healthcare providers, and government agencies to steal data. The 2017 Equifax breach, which exposed the personal details of over 147 million Americans, is a notable example of this trend.</p>
+                        <p><strong>Phishing and Social Engineering:</strong> Cybercriminals use phishing emails and fake websites to trick individuals into revealing personal information. These methods have become more convincing, making it harder for people to recognize scams. Phishing attacks targeting sensitive information, such as banking details or login credentials, are increasingly common.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Human Trafficking Section -->
+                <div class="col-md-6 mb-4">
+                    <!-- Title Above the Bubble -->
+                    <div class="bubble-title">Human Trafficking Trends (Last 10 Years)</div>
+                    <div class="textbox" id="humanTraffickingTextBox" placeholder="Enter information about Human Trafficking...">
+                        <p>Human trafficking is a persistent and devastating crime, involving the exploitation of individuals for forced labor, sexual exploitation, and other forms of modern slavery. Over the past decade, efforts to rescue victims and combat trafficking have evolved, with law enforcement agencies, non-governmental organizations (NGOs), and international bodies working together to address this global issue.</p>
+
+                        <p><strong>Key Trends:</strong></p>
+                        <p><strong>Increased Victim Rescues Due to Improved Law Enforcement Collaboration:</strong> Over the last 10 years, law enforcement agencies worldwide have made significant strides in coordinating efforts to rescue trafficking victims. International collaborations such as Operation Underground Railroad and the U.S. Department of Homeland Security’s Blue Campaign have resulted in more rescues.</p>
+
+                        <p><strong>Focus on High-Risk Areas:</strong> Trafficking hotspots, such as major urban centers, airports, and border areas, have become key focuses for rescue operations. Additionally, trafficking is increasingly recognized as a growing issue in developing countries and regions affected by conflict.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Modern Crime Response &copy; 2024</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
