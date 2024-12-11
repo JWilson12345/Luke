@@ -1,0 +1,126 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+nav.navbar {
+    background-color: #333;
+}
+
+nav.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+nav.navbar a:hover {
+    background-color: #575757;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Card Styling */
+.card-custom {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 1s ease, box-shadow 1s ease, max-height 1s ease, padding 1s ease; /* Increased transition duration to 1s */
+    margin-bottom: 0px; /* Remove extra margin at the bottom of the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    height: auto; /* Allow dynamic height adjustment */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensure content starts from the top */
+    overflow: hidden; /* Prevent overflowing content */
+    max-height: 450px; /* Default max-height for smooth closing */
+}
+
+/* Card Hover Effect */
+.card-custom:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for lifting effect */
+    max-height: 700px; /* Allow card height to expand, but cap it at 700px */
+    padding-bottom: 40px; /* Add padding when expanded */
+}
+
+/* Image Styling */
+.card-custom img {
+    width: 100%;
+    height: 200px; /* Fixed height for image */
+    object-fit: cover; /* Ensure the image covers the card area */
+    border-radius: 8px;
+    margin-top: 0px; /* Remove margin between image and content */
+    max-height: 200px; /* Ensure image doesn't exceed the height */
+    transition: transform 1s ease; /* Smooth transition for the image movement */
+}
+
+/* Move the image down on hover */
+.card-custom:hover img {
+    transform: translateY(20px); /* Move image down slightly as the card expands */
+}
+
+/* Content Styling */
+.card-custom .content {
+    margin-top: 0px; /* Ensure content starts right below the image */
+    opacity: 0;         /* Initially hide the content */
+    transform: translateY(20px);  /* Start content slightly lower */
+    transition: opacity 1s ease, transform 1s ease, max-height 1s ease; /* Increased transition duration to 1s */
+    max-height: 0; /* Initially hide content */
+    overflow: hidden; /* Prevent overflow if content is too long */
+}
+
+/* Reveal content on hover */
+.card-custom:hover .content {
+    opacity: 1; /* Make content visible on hover */
+    max-height: 500px;  /* Reveal more content when card expands */
+    transform: translateY(0);  /* Slide content into place */
+}
+
+/* Grid System - 3 Cards per Row */
+.card-container .col-md-4 {
+    flex: 1 0 32%; /* Make each card 1/3 of the container width */
+    max-width: 32%; /* Force 3 cards per row */
+    padding: 10px; /* Space between cards */
+}
+
+/* Title in the card */
+.card-custom h5.title {
+    font-size: 1.5rem; /* Adjust title size */
+    margin-bottom: 10px;
+}
+
+/* Card Text */
+.card-custom p {
+    font-size: 1rem; /* Adjust text size */
+    margin-bottom: 10px;
+    color: #333;
+    overflow: hidden; /* Prevent overflow if text is too long */
+    text-overflow: ellipsis;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
